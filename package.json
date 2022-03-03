@@ -1,0 +1,19 @@
+{
+  "name": "kspoon.ch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.bbcag.ch/inf-bl/be/2021/wd/team-h/kspoon.ch.git"
+  },
+  "author": "Kimi Löffel",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.7"
+  }
+}
