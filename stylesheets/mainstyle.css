@@ -1,0 +1,24 @@
+:root .whitemode{
+    --bg-color: #e7fafc;
+    --fg-color: #000;
+    --color1: #00597c;
+    --color2: #026873;
+    --color3: #04BF8A;
+    --color4: #025940;
+    --color5: #03A64A;
+}
+
+:root .darkmode {
+    --bg-color: #024059;
+    --fg-color: #fff;
+    --color1: #c0d0d9;
+    --color3: #04BF8A;
+    --color2: #026873;
+    --color4: #025940;
+    --color5: #03A64A;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+}

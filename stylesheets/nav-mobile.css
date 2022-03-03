@@ -1,0 +1,111 @@
+.menu {
+    --burger-block-width: 100px;
+    --burger-offset: 55px;
+    --burger-complete-size: calc(2 * var(--burger-offset) + var(--burger-block-width));
+    --header-height: min(15vh, 166px); 
+}
+
+header {
+    display: grid;
+    height: var(--header-height);
+    width: 100%;
+    grid-template: 100% / var(--burger-complete-size) 1fr;
+}
+
+.hamburger {
+    z-index: 2;
+    grid-column-start: 1;
+    margin: auto calc(var(--burger-offset) - 5px);
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.line {
+    display: block;
+    width: var(--burger-block-width);
+    height: 8px;
+    margin: 14px 0;
+    border-color: var(--color1);
+    background-color: var(--color1);
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    color: var(--fg-color);
+    grid-column-start: 2;
+    display: flex;
+    align-items: center;
+    font-size: 5em;
+    font-family: "Roboto Thin", sans-serif;
+}
+
+nav {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    padding-top: var(--header-height);
+    padding-left: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    font-size: 2em;
+    font-family: "Poppins";
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+nav.overlay {
+    visibility: visible;
+    margin-left: 0;
+    padding-left: var(--burger-complete-size);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#hamburger.is-open .line:nth-child(1) {
+    transform: translateY(20px) rotate(-45deg);
+}
+
+#hamburger.is-open .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.is-open .line:nth-child(3) {
+    transform: translateY(-20px) rotate(45deg);
+}
+
+#hamburger .line:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: calc(-4 * var(--burger-block-width));
+    opacity: 0;
+}
+
+#hamburger.is-open .line:nth-child(4) {
+    left: var(--burger-offset);
+}
