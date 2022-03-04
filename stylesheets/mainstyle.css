@@ -6,6 +6,7 @@
     --color3: #04BF8A;
     --color4: #025940;
     --color5: #03A64A;
+    --left-offset: 5rem;
 }
 
 :root .darkmode {
