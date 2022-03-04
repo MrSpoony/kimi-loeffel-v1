@@ -1,0 +1,17 @@
+.banner {
+    position: relative;
+}
+
+.banner img {
+    margin-top: 3vw;
+    width: 100%;
+    height: 60vw;
+}
+
+h2 {
+    position: absolute;
+    bottom: 17%;
+    left: var(--left-offset);
+    font-family: "Poppins";
+    font-size: 4em;
+}
