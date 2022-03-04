@@ -1,18 +1,20 @@
 .menu {
-    --burger-block-width: 100px;
+    --burger-block-width: 6.5em;
     --burger-offset: var(--left-offset);
-    --burger-height: 8px;
+    --burger-height: 0.7em;
     --burger-top-margin: 1.5rem;
     --burger-complete-size-y: calc(3 * (var(--burger-height) + var(--burger-top-margin)));
     --burger-complete-size-x: calc(2 * var(--burger-offset) + var(--burger-block-width));
-    --header-height: min(18vh, 190px); 
-}
-
-article {
-    display: inline;
+    --header-height: min(18vh, 10em); 
+    background-color: var(--bg-color);
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 header {
+
     display: grid;
     height: var(--header-height);
     width: 100%;
@@ -20,7 +22,7 @@ header {
 }
 
 .hamburger {
-    z-index: 2;
+    z-index: 100;
     grid-column-start: 1;
     margin: auto var(--burger-offset);
 }
@@ -80,12 +82,16 @@ nav li {
     list-style: none;
 }
 
+nav li a:hover {
+    cursor: pointer;
+}
+
 nav a {
     color: #fff;
     display: block;
     font-size: 2em;
     font-family: "Poppins";
-    margin-bottom: 30px;
+    margin-bottom: 1em;
     text-decoration: none;
 }
 

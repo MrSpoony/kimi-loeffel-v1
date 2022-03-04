@@ -14,20 +14,37 @@ function resetBar() {
 
 
 function setBarYToLinkOfCurrentSite() {
-    let x = {
-        '/': 'index',
-        '/index.html': 'index',
-        '/proects': 'projects',
-        '/projects.html': 'projects'
-    }
-    const loc = location.pathname;
-    for (let el of navElements) {
-        const a = el.childNodes[0];
-        if (x[loc] !== a.id) continue;
-        const y = el.getBoundingClientRect().y;
-        movingBar.style.position = 'absolute';
-        movingBar.style.top = y+'px';
-        break;
+    let paths = {
+        "/": "index",
+        "/index.html": "index",
+        "/projects": "projects",
+        "/projects/index.html": "projects",
+        "/about-me": "about-me",
+        "/about-me/index.html": "about-me",
+        "/impressum": "impressum",
+        "/impressum/index.html": "impressum",
+    };
+
+    const index = 'index.html';
+    let loc = location.pathname;
+    if (loc.endsWith(index)) loc = loc.slice(0, loc.length-index.length);
+    for (let path in paths) {
+        for (let navElement of navElements) {
+            let link;
+            for (let element of navElement.childNodes) if (element.nodeType === Node.ELEMENT_NODE) link = element;
+            if (!paths[loc]) {
+                if (!loc.includes(link.id)) continue;
+                const y = navElement.getBoundingClientRect().y;
+                movingBar.style.position = "absolute";
+                movingBar.style.top = y + "px";
+                break;
+            }
+            if (paths[loc] != link.id) continue;
+            const y = navElement.getBoundingClientRect().y;
+            movingBar.style.position = "absolute";
+            movingBar.style.top = y + "px";
+            break;
+        }
     }
 }
 
@@ -50,6 +67,7 @@ function moveBar(e) {
 setBarYToLinkOfCurrentSite();
 
 hamburger.addEventListener('click', toggleNav)
+
 for (let element of navElements) {
-    element.addEventListener('mouseover', moveBar)
+    element.addEventListener('mouseover', moveBar);
 }

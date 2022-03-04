@@ -7,6 +7,8 @@ if (savedTheme) {
     currTheme = savedTheme;
 }
 
+document.documentElement.setAttribute('theme', currTheme);
+localStorage.setItem('theme', currTheme);
 
 function switchModes() {
     if (currTheme === 'light') {

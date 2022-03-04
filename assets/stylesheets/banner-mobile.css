@@ -13,4 +13,5 @@ h2 {
     left: var(--left-offset);
     font-family: "Poppins";
     font-size: 4em;
+    color: var(--color2)
 }

@@ -2,32 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>KSpoon</title>
-    <link rel="stylesheet" href="stylesheets/mainstyle.css">
-    <link rel="stylesheet" href="stylesheets/nav-mobile.css">
+    <link rel="stylesheet" href="assets/stylesheets/mainstyle.css">
+    <link rel="stylesheet" href="assets/stylesheets/banner-mobile.css">
+    <link rel="stylesheet" href="assets/stylesheets/header-mobile.css">
+    <link rel="stylesheet" href="assets/stylesheets/footer-mobile.css">
+    <link rel="stylesheet" href="assets/stylesheets/overview.css">
+    <link rel="stylesheet" href="assets/stylesheets/projects-mobile.css">
 </head>
-<body class="whitemode">
-    <div class="menu">
+<body>
+    <section class="menu">
         <header>
-            <div class="hamburger" id="hamburger">
+            <article class="hamburger" id="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
-            </div>
+            </article>
             <h1>
                 KSpoon
             </h1>
         </header>
-
         <nav>
             <ul>
                 <li><a id="index" href="index.html">Home</a></li>
-                <li><a id="projects" href="#">Projects</a></li>
+                <li><a id="projects" href="projects.html">Projects</a></li>
                 <li><a id="impressum" href="#">Other stuff</a></li>
+                <li><a id="mode-switch">Switch Theme</a></li>
             </ul>
+        </nav>
+    </section>
+    <section class="banner">
+        <img src="assets/placeholder.png" alt="Bild von Kimi">
+        <h2>Kimi Löffel</h2>
+    </section>
+
+    <section class="overview">
+        <h3>
+            Overview
+        </h3>
+        <p>
+            This is an overview of the Website,
+            what you can expect from it,
+            what you'll learn from it.
+            And every other stuff,
+            you can learn about me on this webpage.
+        </p>
+    </section>
+
+    <section class="projects">
+        <article class="project">
+            <a href="projects/XXX/">
+                <h3>
+                    Project 1
+                </h3>
+                <img src="assets/projects/XXX/banner.png" alt="Image for Project XXX">
+            </a>
+            <p>
+                This is a short explenation to this project
+                with some placeholder text so I can see how my
+                Webpage will look like with more entries.
+            </p>
+        </article>
+        <article class="project">
+            <a href="projects/XXX">
+                <h3>
+                    Project 2
+                </h3>
+                <img src="assets/projects/XXX/banner.png" alt="Image for Project XXX">
+            </a>
+            <p>
+                This is a short explenation to this project
+                with some placeholder text so I can see how my
+                Webpage will look like with more entries.
+            </p>
+        </article>
+        <article class="project">
+            <a href="projects/XXX">
+                <h3>
+                    Project 2
+                </h3>
+                <img src="assets/projects/XXX/banner.png" alt="Image for Project XXX">
+            </a>
+            <p>
+                This is a short explenation to this project
+                with some placeholder text so I can see how my
+                Webpage will look like with more entries.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/MrSpoony/"><i></i></a>
+            <a href="https://instagram.com/MrSpoony100"><i></i></a>
+            <a href="https://reddit.com/u/MrSpoony100"><i></i></a>
+            <a href="mailto:kimi.loefffel@gmail.com"><i></i></a>
         </div>
-    </div>
-    <script src="scripts/nav.js"></script>
+        <ul>
+            <li><a href="#">Home</a></li> | 
+            <li><a href="#">Contact</a></li> | 
+            <li><a href="#">Impressum</a></li>
+        </ul>
+        <p class="copyright">
+            Kimi Löffel © 2022
+        </p>
+    </footer>
+
+    <script src="assets/scripts/project-display.js"></script>
+    <script src="assets/scripts/nav.js"></script>
+    <script src="assets/scripts/mode.js"></script>
 </body>
 </html>
