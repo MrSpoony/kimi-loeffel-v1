@@ -5,7 +5,7 @@
     --burger-top-margin: 1.5rem;
     --burger-complete-size-y: calc(3 * (var(--burger-height) + var(--burger-top-margin)));
     --burger-complete-size-x: calc(2 * var(--burger-offset) + var(--burger-block-width));
-    --header-height: min(18vh, 166px); 
+    --header-height: min(18vh, 190px); 
 }
 
 article {

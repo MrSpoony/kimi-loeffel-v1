@@ -1,0 +1,57 @@
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.social {
+    padding: 0 10%;
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social a i {
+    font-size: 10vw;
+    font-family: "Hack Nerd Font Mono";
+}
+
+.social a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 10vw;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: var(--bg-color);
+}
+
+.social a:hover {
+    background-color: var(--color4);
+    /* opacity: 0.3; */
+}
+
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    padding: 4vw 10% 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2.5em;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    font-size: 1em;
+    text-align: center;
+}
