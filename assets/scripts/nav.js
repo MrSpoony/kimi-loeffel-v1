@@ -2,7 +2,7 @@
 
 const hamburger = document.getElementById('hamburger');
 const nav = document.querySelector('nav')
-const elements = document.querySelectorAll('nav li')
+const navElements = document.querySelectorAll('nav li')
 const movingBar = document.querySelector('#hamburger .line:nth-child(4)');
 
 let navToggle = false;
@@ -21,7 +21,7 @@ function setBarYToLinkOfCurrentSite() {
         '/projects.html': 'projects'
     }
     const loc = location.pathname;
-    for (let el of elements) {
+    for (let el of navElements) {
         const a = el.childNodes[0];
         if (x[loc] !== a.id) continue;
         const y = el.getBoundingClientRect().y;
@@ -50,6 +50,6 @@ function moveBar(e) {
 setBarYToLinkOfCurrentSite();
 
 hamburger.addEventListener('click', toggleNav)
-for (let element of elements) {
+for (let element of navElements) {
     element.addEventListener('mouseover', moveBar)
 }

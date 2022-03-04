@@ -20,6 +20,31 @@
 }
 
 body {
-    background-color: var(--bg-color);
-    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color3);
+}
+
+p {
+    word-wrap: break-word;
+    font-family: "Poppins Light";
+    font-size: 2em;
+    padding: 0 var(--left-offset);
+}
+
+h3 {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 3.5em;
+}
+
