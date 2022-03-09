@@ -1,6 +1,12 @@
 const links = document.querySelectorAll('a');
 
+const exceptionIds = [
+    "mode-switch"
+];
+
+
 function clickEvent(e) {
+    if (exceptionIds.includes(e.target.id)) return;
     e.preventDefault();
     let element = e.target;
     while (element.nodeName !== "A") {
