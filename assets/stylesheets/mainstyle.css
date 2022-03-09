@@ -1,7 +1,7 @@
 :root {
     --white-color: #e7fafc;
     --black-color: #000;
-    --left-offset: 5rem;
+    --left-offset: 2.5rem;
 }
 
 [theme='light'] {
@@ -58,17 +58,35 @@ p {
     color: var(--fg-color);
     word-wrap: break-word;
     font-family: "Poppins Light";
-    font-size: 2em;
+    font-size: 1em;
     padding: 0 var(--left-offset);
+}
+
+article {
+    display: inline;
+}
+
+h1 {
+    color: var(--fg-color);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    grid-column-start: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 3.5em;
+    font-family: "Roboto Thin", sans-serif;
+}
+
+h2 {
+    font-family: "Poppins";
+    font-size: 2.5em;
+    color: var(--color2)
 }
 
 h3 {
     color: var(--color3);
     font-family: "Poppins";
     text-align: center;
-    font-size: 3.5em;
-}
-
-article {
-    display: inline;
+    font-size: 1.75em;
 }

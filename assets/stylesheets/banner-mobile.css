@@ -7,11 +7,8 @@
     height: auto;
 }
 
-h2 {
+.banner h2 {
     position: absolute;
     bottom: 17%;
     left: var(--left-offset);
-    font-family: "Poppins";
-    font-size: 4em;
-    color: var(--color2)
 }
