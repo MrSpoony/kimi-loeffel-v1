@@ -1,7 +1,24 @@
+@media screen and (max-width: 900px) {
+     :root {
+        --left-offset: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1440px) {
+     :root {
+        --left-offset: 75px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+     :root {
+        --left-offset: 100px;
+    }
+}
+
 :root {
     --white-color: #e7fafc;
     --black-color: #000;
-    --left-offset: 2.5rem;
 }
 
 [theme='light'] {
@@ -32,10 +49,9 @@
     filter: invert(0.8) hue-rotate(193deg) saturate(400%);
 }
 
-
 body {
     position: relative;
-    transition: all 0.6s ease-in-out;
+    /* transition: all 0.6s ease-in-out; */
     opacity: 0;
     background-color: var(--bg-color);
     width: 100vw;
@@ -59,7 +75,6 @@ p {
     word-wrap: break-word;
     font-family: "Poppins Light";
     font-size: 1em;
-    padding: 0 var(--left-offset);
 }
 
 article {

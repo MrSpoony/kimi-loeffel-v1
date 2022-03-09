@@ -1,8 +1,8 @@
 .menu {
     --burger-block-width: 3.5em;
     --burger-offset: var(--left-offset);
-    --burger-height: 0.5em;
-    --burger-top-margin: 1rem;
+    --burger-height: 0.4em;
+    --burger-top-margin: 0.8rem;
     --burger-complete-size-y: calc(3 * (var(--burger-height) + var(--burger-top-margin)));
     --burger-complete-size-x: calc(2 * var(--burger-offset) + var(--burger-block-width));
     --header-height: min(15vh, 5em); 
@@ -78,7 +78,7 @@ nav li a:hover {
 nav a {
     color: var(--white-color);
     display: block;
-    font-size: 3em;
+    font-size: 1.8em;
     font-family: "Poppins";
     margin-bottom: 1em;
     text-decoration: none;

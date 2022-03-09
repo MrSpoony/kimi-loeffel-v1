@@ -1,10 +1,22 @@
+@media screen and (min-width: 900px) {
+    .banner img {
+        object-fit: cover;
+        height: 45vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner img {
+        height: auto;
+    }
+}
+
 .banner {
     position: relative;
 }
 
 .banner img {
     width: 100%;
-    height: auto;
 }
 
 .banner h2 {

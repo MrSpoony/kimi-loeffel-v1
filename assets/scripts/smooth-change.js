@@ -13,6 +13,11 @@ function clickEvent(e) {
         element = element.parentElement;
     }
     let href = element.href;
+    let target = element.target;
+    if (target === "_blank") {
+        window.open(href, target);
+        return;
+    }
     document.querySelector('body').style.opacity = 0;
     setTimeout(function () {
         location.href = href;

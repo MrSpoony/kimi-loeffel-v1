@@ -1,3 +1,17 @@
+@media screen and (max-width: 800px) {
+    footer {
+        --icon-size: 8vw;
+        --icon-border: 9vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        --icon-size: 5vh;
+        --icon-border: 6vh;
+    }
+}
+
 footer {
     width: 100%;
     height: auto;
@@ -13,7 +27,7 @@ footer {
 }
 
 .social a i {
-    font-size: 10vw;
+    font-size: var(--icon-size);
     font-family: "Hack Nerd Font Mono";
 }
 
@@ -22,8 +36,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10vw;
-    height: 10vw;
+    width: var(--icon-border);
+    height: var(--icon-border);
     border-style: solid;
     border-radius: 100%;
     border-color: var(--bg-color);
@@ -33,7 +47,6 @@ footer {
     background-color: var(--color4);
     /* opacity: 0.3; */
 }
-
 
 footer ul {
     list-style: none;
