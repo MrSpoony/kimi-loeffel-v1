@@ -7,7 +7,7 @@
         margin-top: 4em;
     }
     .project p {
-        padding: 0 var(--left-offset);
+        padding: 0 var(--side-offset);
     }
     .project img {
         margin-top: 1em;
@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 900px) {
     .project {
-        margin: 1em;
+        margin: 1em 0;
     }
     .project img {
         margin-top: 0.7em;
@@ -25,7 +25,7 @@
 
 @media screen and (min-width: 900px) and (max-width: 1440px) {
     .projects {
-        margin: 0 var(--left-offset);
+        margin: 0 var(--side-offset);
         display: flex;
         align-items: stretch;
         flex-direction: row;
@@ -39,7 +39,9 @@
 
 @media screen and (min-width: 1440px) {
     .projects {
-        margin: 0 var(--left-offset);
+        padding: 5em;
+        margin: 0 auto;
+        max-width: 1440px;
         display: flex;
         align-items: stretch;
         flex-direction: row;
@@ -47,7 +49,7 @@
         justify-content: space-between;
     }
     .project {
-        width: 26vw;
+        width: 375px;
     }
 }
 

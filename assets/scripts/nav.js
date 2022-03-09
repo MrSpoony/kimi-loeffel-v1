@@ -27,11 +27,12 @@ function setBarYToLinkOfCurrentSite() {
 
     const index = 'index.html';
     let loc = location.pathname;
-    if (loc.endsWith(index)) loc = loc.slice(0, loc.length-index.length);
+    if (loc.endsWith(index)) loc = loc.slice(0, loc.length - index.length);
     for (let path in paths) {
         for (let navElement of navElements) {
             let link;
-            for (let element of navElement.childNodes) if (element.nodeType === Node.ELEMENT_NODE) link = element;
+            for (let element of navElement.childNodes)
+                if (element.nodeType === Node.ELEMENT_NODE) link = element;
             if (!paths[loc]) {
                 if (!loc.includes(link.id)) continue;
                 const y = navElement.getBoundingClientRect().y;
@@ -61,7 +62,7 @@ function toggleNav() {
 
 function moveBar(e) {
     const y = e.target.getBoundingClientRect().y;
-    movingBar.style.top = y+'px';
+    movingBar.style.top = y + 'px';
 }
 
 setBarYToLinkOfCurrentSite();

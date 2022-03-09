@@ -1,13 +1,32 @@
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
+    .banner img {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1440px) {
     .banner img {
         object-fit: cover;
         height: 45vh;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1440px) {
+    .banner h2 {
+        position: absolute;
+        bottom: 17%;
+        left: var(--side-offset);
+    }
+}
+
+@media screen and (min-width: 1440px) {
     .banner img {
-        height: auto;
+        object-fit: cover;
+        height: 45vh;
+    }
+    .banner h2 {
+        max-width: 1440px;
+        margin: 0 auto;
     }
 }
 
@@ -17,10 +36,4 @@
 
 .banner img {
     width: 100%;
-}
-
-.banner h2 {
-    position: absolute;
-    bottom: 17%;
-    left: var(--left-offset);
 }
