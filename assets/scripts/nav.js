@@ -2,6 +2,7 @@
 
 const hamburger = document.getElementById('hamburger');
 const nav = document.querySelector('nav')
+const navBG = document.querySelector('.nav-background')
 const navElements = document.querySelectorAll('nav li')
 const movingBar = document.querySelector('#hamburger .line:nth-child(4)');
 
@@ -12,6 +13,9 @@ function resetBar() {
     movingBar.style.opacity = 0;
 }
 
+function setPos(pos) {
+    movingBar.style.top = pos + 4 + 'px';
+}
 
 function setBarYToLinkOfCurrentSite() {
     let paths = {
@@ -37,13 +41,13 @@ function setBarYToLinkOfCurrentSite() {
                 if (!loc.includes(link.id)) continue;
                 const y = navElement.getBoundingClientRect().y;
                 movingBar.style.position = "absolute";
-                movingBar.style.top = y + "px";
+                setPos(y);
                 break;
             }
             if (paths[loc] != link.id) continue;
             const y = navElement.getBoundingClientRect().y;
             movingBar.style.position = "absolute";
-            movingBar.style.top = y + "px";
+            setPos(y);
             break;
         }
     }
@@ -51,7 +55,7 @@ function setBarYToLinkOfCurrentSite() {
 
 function toggleNav() {
     hamburger.classList.toggle('is-open');
-    nav.classList.toggle('overlay');
+    navBG.classList.toggle('overlay');
     if (navToggle) resetBar();
     else {
         setBarYToLinkOfCurrentSite();
@@ -62,7 +66,7 @@ function toggleNav() {
 
 function moveBar(e) {
     const y = e.target.getBoundingClientRect().y;
-    movingBar.style.top = y + 'px';
+    setPos(y);
 }
 
 setBarYToLinkOfCurrentSite();

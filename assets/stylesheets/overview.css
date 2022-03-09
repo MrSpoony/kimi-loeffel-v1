@@ -2,6 +2,14 @@
     margin-top: 0.6em;
 }
 
+.overview {
+    padding: 0 var(--side-offset);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .overview p {
+    max-width: 600px;
     text-align: center;
 }

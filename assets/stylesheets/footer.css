@@ -38,7 +38,7 @@ footer {
     justify-content: space-evenly;
 }
 
-.social a i {
+i {
     font-size: var(--icon-size);
     font-family: "Hack Nerd Font Mono";
 }

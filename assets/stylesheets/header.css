@@ -11,8 +11,26 @@
     }
 }
 
+
+/* I hate Web Design please be kind to me...  */
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+    nav li {
+        padding-left: calc(var(--text-inset) + 3.7rem);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    nav {
+        margin: 0 auto;
+    }
+    nav li {
+        padding-left: calc(var(--text-inset) - 0.8rem);
+    }
+}
+
 .menu {
-    --burger-right-offset: 2.5rem;
+    --text-inset: 2.5rem;
     --burger-block-width: 3.5em;
     --burger-height: 0.4em;
     --burger-top-margin: 0.8rem;
@@ -48,16 +66,23 @@ header {
     width: var(--burger-block-width);
     height: var(--burger-height);
     margin: var(--burger-top-margin) 0;
-    border-color: var(--color1);
-    background-color: var(--color1);
+    border-color: var(--color3);
+    background-color: var(--color3);
     transition: all 0.3s ease-in-out;
 }
 
 .menu h1 {
-    padding-left: var(--burger-right-offset);
+    padding-left: var(--text-inset);
 }
 
 nav {
+    padding-top: var(--header-height);
+    max-width: 1440px;
+    height: var(--header-height);
+    width: 100%;
+}
+
+.nav-background {
     z-index: 1;
     min-width: 100%;
     min-height: 100%;
@@ -65,17 +90,13 @@ nav {
     top: 0;
     left: 0;
     width: 0;
-    padding: var(--header-height) var(--side-offset);
-    margin-left: calc(var(--burger-complete-size-x) * -1);
     transition: all 0.3s ease-in-out;
     visibility: hidden;
     opacity: 0;
-    display: grid;
-    grid-template: 100% / var(--burger-block-width) 1fr;
+    padding: 0 var(--side-offset);
 }
 
 nav ul {
-    grid-column-start: 2;
     margin: 0;
     padding-inline-start: 0;
     padding-inline-end: 0;
@@ -88,7 +109,6 @@ nav ul {
 nav li {
     list-style: none;
     margin: 2em 0;
-    margin-left: var(--burger-right-offset);
 }
 
 nav li a:hover {
@@ -103,7 +123,7 @@ nav a {
     text-decoration: none;
 }
 
-nav.overlay {
+.overlay {
     visibility: visible;
     margin-left: 0;
     opacity: 1;

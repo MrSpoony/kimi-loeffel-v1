@@ -23,17 +23,17 @@
 }
 
 [theme='light'] {
-    --bg-color: #e7fafc;
+    --bg-color: #fff;
     --fg-color: #000;
-    --color1: #00597c;
-    --color2: #026873;
-    --color3: #04BF8A;
-    --color4: #025940;
-    --color5: #03A64A;
+    --color1: #026873;
+    --color2: #02527C;
+    --color3: #04C28A;
+    --color4: #03B02C;
+    --color5: #027940;
 }
 
 [theme='dark'] {
-    --bg-color: #024059;
+    --bg-color: #000;
     --fg-color: #fff;
     --color1: #c0d0d9;
     --color2: #026873;
@@ -82,7 +82,7 @@ article {
 }
 
 h1 {
-    color: var(--fg-color);
+    color: var(--color2);
     margin-block-start: 0;
     margin-block-end: 0;
     grid-column-start: 2;
@@ -96,7 +96,7 @@ h1 {
 h2 {
     font-family: "Poppins", sans-serif;
     font-size: 2.5em;
-    color: var(--color2)
+    color: var(--color1)
 }
 
 h3 {
