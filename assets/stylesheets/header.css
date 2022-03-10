@@ -75,6 +75,10 @@ header {
     padding-left: var(--text-inset);
 }
 
+.menu a {
+    text-decoration: none;
+}
+
 nav {
     padding-top: var(--header-height);
     max-width: 1440px;

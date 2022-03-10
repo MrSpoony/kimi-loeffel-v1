@@ -4,7 +4,7 @@
     }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1440px) {
+@media screen and (min-width: 900px) {
     .banner img {
         object-fit: cover;
         height: 45vh;
@@ -13,21 +13,28 @@
 
 @media screen and (max-width: 1440px) {
     .banner h2 {
-        position: absolute;
-        bottom: 17%;
         left: var(--side-offset);
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .banner img {
-        object-fit: cover;
-        height: 45vh;
-    }
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
     .banner h2 {
-        max-width: 1440px;
-        margin: 0 auto;
+        left: 80px;
     }
+}
+
+@media screen and (min-width: 1600px) {
+    .banner h2 {
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 1440px;
+    }
+}
+
+.banner h2 {
+    position: absolute;
+    bottom: 17%;
 }
 
 .banner {
