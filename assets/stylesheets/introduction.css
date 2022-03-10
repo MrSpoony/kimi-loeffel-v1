@@ -1,0 +1,31 @@
+.introduction p .line::before {
+    content: ">";
+}
+
+.introduction p .line{
+    color: var(--code-color-fg);
+    line-height: 3em;
+    background-color: var(--code-color-bg);
+    text-shadow: 0 0 4px var(--code-color-fg);
+}
+.introduction {
+    padding: 0 var(--side-offset);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.introduction p {
+    color: var(--code-color-fg);
+    line-height: 3em;
+    background-color: var(--code-color-bg);
+    border-radius: 1.5em;
+    border: 0.2em;
+    border-style: solid;
+    border-color: var(--code-color-fg);
+    box-shadow: 0 0 10px var(--code-color-fg);
+    padding: 1em;
+}
+
+.introduction h3 {
+    margin: 1em 0;
+}
