@@ -59,18 +59,19 @@
 }
 
 .project a {
-    display: inline-block;
-    height: 100;
+    display: flex;
+    flex-flow: column;
 }
 
 .project img {
     width: 100%;
     object-position: left bottom;
-    object-fit: contain;
-    height: 10vw;
+    object-fit: cover;
+    height: auto;
 }
 
 .project p {
+    margin-top: 0.5em;
     color: var(--fg-color);
     text-decoration: none;
 }

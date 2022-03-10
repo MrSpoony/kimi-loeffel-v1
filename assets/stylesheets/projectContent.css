@@ -23,7 +23,6 @@
     margin: 0 auto;
     margin-top: 2em;
     display: flex;
-    align-items: center;
 }
 
 .bullet-point {
@@ -43,4 +42,8 @@
 
 .bullet-point p {
     text-align: center;
+}
+
+.bullet-point .joke {
+    font-family: 'Hack Nerd Font Mono';
 }
