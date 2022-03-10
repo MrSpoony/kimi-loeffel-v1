@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <base href="/../../">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <base href="../../">
     <title>KSpoon</title>
+
+    <!-- Sylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/mainstyle.css">
-    <link rel="stylesheet" href="assets/stylesheets/banner-mobile.css">
-    <link rel="stylesheet" href="assets/stylesheets/header-mobile.css">
-    <link rel="stylesheet" href="assets/stylesheets/footer-mobile.css">
+    <link rel="stylesheet" href="assets/stylesheets/banner.css">
+    <link rel="stylesheet" href="assets/stylesheets/header.css">
+    <link rel="stylesheet" href="assets/stylesheets/footer.css">
     <link rel="stylesheet" href="assets/stylesheets/overview.css">
-    <link rel="stylesheet" href="assets/stylesheets/projects-mobile.css">
+    <link rel="stylesheet" href="assets/stylesheets/projectContent.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <section class="menu">
         <header>
-            <article class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
-            </article>
-            <h1>
-                KSpoon
-            </h1>
+            </div>
+            <a href="index.html">
+                <h1>
+                    KSpoon
+                </h1>
+            </a>
         </header>
-        <nav>
-            <ul>
-                <li><a id="index" href="index.html">Home</a></li>
-                <li><a id="projects" href="projects.html">Projects</a></li>
-                <li><a id="impressum" href="impressum.html">Other stuff</a></li>
-                <li><a id="mode-switch">Switch Theme</a></li>
-            </ul>
-        </nav>
+        <div class="nav-background">
+            <nav>
+                <ul>
+                    <li>
+                        <a id="index" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a id="projects" href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a id="about-me" href="about-me.html">About me</a>
+                    </li>
+                    <li>
+                        <a id="impressum" href="impressum.html">Impressum</a>
+                    </li>
+                    <li><a id="mode-switch">Switch Theme</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
     <section class="banner">
-        <img src="assets/img/placeholder.png" alt="Bild von Kimi">
-        <h2>Node.js discord bot</h2>
+        <img src="projects/nodejs-dc-bot/banner.png" alt="Bild von Kimi">
     </section>
 
     <section class="overview">
@@ -44,28 +63,44 @@
             Overview
         </h3>
         <p>
-            In this projects I created a Discord bot with the help of
-            node.js. With this bot you are able to write <code>!joke</code>
-            to get a dad joke fetched from an API. The main feature is
-            that you are able to use the command <code>!toggle-dad-joke</code> 
-            to toggle a mode for the current channel to send dad-jokes everyday
-            at midnight.
+            In this project I made a discord bot with the help of node.js
         </p>
     </section>
 
-    <br>
-    <br>
+    <section class="content">
+        <article class="bullet-point">
+            <i></i>
+            <p><span><a href="https://github.com/MrSpoony/dadjoke-dcBot">Source Code</a></span></p>
+        </article>
+        <article class="bullet-point">
+            <i></i>
+            <p>Type <code>!joke</code> for a joke</p>
+        </article>
+        <article class="bullet-point">
+            <i></i>
+            <p>Type <code>!toggle-dad-jokes</code> to get a midnightly joke</p>
+        </article>
+        <article class="bullet-point">
+            <i>ﯦ</i>
+            <p>Example joke: <span class="joke"></span></p>
+        </article>
+        <article>
+            
+        </article>
+    </section>
+
+    <div class="content-wrap"></div>
 
     <footer>
-        <div class="social">
-            <a href="https://github.com/MrSpoony/"><i></i></a>
-            <a href="https://instagram.com/MrSpoony100"><i></i></a>
-            <a href="https://reddit.com/u/MrSpoony100"><i></i></a>
-            <a href="mailto:kimi.loefffel@gmail.com"><i></i></a>
-        </div>
+        <menu class="social">
+            <a href="https://github.com/MrSpoony/" target="_blank"><i></i></a>
+            <a href="https://wakatime.com/@MrSpoony" target="_blank"><i>祥</i></a>
+            <a href="https://instagram.com/MrSpoony100" target="_blank"><i></i></a>
+            <a href="https://reddit.com/u/MrSpoony100" target="_blank"><i></i></a>
+        </menu>
         <ul>
-            <li><a href="index.html">Home</a></li> | 
-            <li><a href="contact.html">Contact</a></li> | 
+            <li><a href="index.html">Home</a></li> |
+            <li><a href="about-me.html">About me</a></li> |
             <li><a href="impressum.html">Impressum</a></li>
         </ul>
         <p class="copyright">
@@ -76,5 +111,8 @@
     <script src="assets/scripts/nav.js"></script>
     <script src="assets/scripts/mode.js"></script>
     <script src="assets/scripts/smooth-change.js"></script>
+    <script src="assets/scripts/tmp-repeat.js"></script>
+    <script src="assets/scripts/joke.js"></script>
 </body>
+
 </html>

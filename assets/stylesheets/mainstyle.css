@@ -70,10 +70,6 @@
     filter: invert(0) hue-rotate(0deg) saturate(100%);
 }
 
-[theme='dark'] img {
-    filter: invert(0.8) hue-rotate(193deg) saturate(400%);
-}
-
 body {
     position: relative;
     opacity: 0;
@@ -138,5 +134,23 @@ h3 {
 }
 
 span a {
+    text-decoration: none;
     white-space: nowrap;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+code {
+    background-color: var(--code-color-fg);
+    color: var(--code-color-bg);
+    border-radius: 0.3em;
+    padding: 4px 5px 6px;
+    white-space: nowrap;
+}
+
+i {
+    font-family: "Hack Nerd Font Mono";
 }

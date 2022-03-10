@@ -1,0 +1,46 @@
+@media screen and (max-width: 900px) {
+    .content {
+        flex-flow: column;
+        justify-content: center;
+    }
+    .bullet-point {
+        margin-top: 2em;
+    }
+    .bullet-point i {
+        margin-bottom: -0.1em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .content {
+        justify-content: space-evenly;
+    }
+}
+
+.content {
+    max-width: 1440px;
+    padding: 0 var(--side-offset);
+    margin: 0 auto;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.bullet-point {
+    width: 12em;
+    max-width: 12em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bullet-point i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fg-color);
+    font-size: 10em;
+}
+
+.bullet-point p {
+    text-align: center;
+}

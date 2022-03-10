@@ -65,7 +65,9 @@
 
 .project img {
     width: 100%;
-    height: auto;
+    object-position: left bottom;
+    object-fit: contain;
+    height: 10vw;
 }
 
 .project p {
