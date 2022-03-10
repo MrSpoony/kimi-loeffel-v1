@@ -21,7 +21,7 @@ function clickEvent(e) {
     document.querySelector('body').style.opacity = 0;
     setTimeout(function () {
         location.href = href;
-    }, 800);
+    }, 200);
 }
 
 

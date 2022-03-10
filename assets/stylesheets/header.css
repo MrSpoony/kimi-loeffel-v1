@@ -1,6 +1,12 @@
 @media screen and (max-width: 900px) {
-    nav ul {
+    nav li {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .nav-background {
+        padding: 0 var(--side-offset);
     }
 }
 
@@ -11,9 +17,7 @@
     }
 }
 
-
-/* I hate Web Design please be kind to me...  */
-
+/* I hate Web Design now please be kind to me...  */
 @media screen and (min-width: 900px) and (max-width: 1600px) {
     nav li {
         padding-left: calc(var(--text-inset) + 3.7rem);
@@ -97,7 +101,6 @@ nav {
     transition: all 0.3s ease-in-out;
     visibility: hidden;
     opacity: 0;
-    padding: 0 var(--side-offset);
 }
 
 nav ul {
