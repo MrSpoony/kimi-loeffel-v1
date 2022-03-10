@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>KSpoon</title>
+
+    <!-- Sylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/mainstyle.css">
-    <link rel="stylesheet" href="assets/stylesheets/banner-mobile.css">
-    <link rel="stylesheet" href="assets/stylesheets/header-mobile.css">
-    <link rel="stylesheet" href="assets/stylesheets/footer-mobile.css">
+    <link rel="stylesheet" href="assets/stylesheets/banner.css">
+    <link rel="stylesheet" href="assets/stylesheets/header.css">
+    <link rel="stylesheet" href="assets/stylesheets/footer.css">
     <link rel="stylesheet" href="assets/stylesheets/overview.css">
-    <link rel="stylesheet" href="assets/stylesheets/projects-mobile.css">
+    <link rel="stylesheet" href="assets/stylesheets/projects.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <section class="menu">
         <header>
-            <article class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
-            </article>
-            <h1>
-                KSpoon
-            </h1>
+            </div>
+            <a href="index.html">
+                <h1>
+                    KSpoon
+                </h1>
+            </a>
         </header>
-        <nav>
-            <ul>
-                <li>
-                    <a id="index" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a id="projects" href="projects.html">Projects</a>
-                </li>
-                <li>
-                    <a id="about-me" href="about-me.html">About me</a>
-                </li>
-                <li>
-                    <a id="impressum" href="impressum.html">Impressum</a>
-                </li>
-                <li><a id="mode-switch">Switch Theme</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="nav-background">
+            <nav>
+                <ul>
+                    <li>
+                        <a id="index" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a id="projects" href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a id="about-me" href="about-me.html">About me</a>
+                    </li>
+                    <li>
+                        <a id="impressum" href="impressum.html">Impressum</a>
+                    </li>
+                    <li><a id="mode-switch">Switch Theme</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
     <section class="banner">
-        <img src="projects/nodejs-dc-bot/banner.png" alt="Bild von Kimi">
+        <img src="assets/img/placeholder.png" alt="Bild von Kimi">
         <h2>
             Projects
         </h2>
@@ -55,12 +65,7 @@
             Overview
         </h3>
         <p>
-            This is an overview of the Website,
-            what you can expect from it,
-            what you'll learn from it.
-            And every other stuff,
-            you can learn about me on this webpage.
-
+            Below you see some of my recent projects. Some of them I made in the "Berufsbildungscenter" (Bbc) and others at home.
         </p>
     </section>
 
@@ -73,67 +78,78 @@
                 <img src="projects/nodejs-dc-bot/banner.png" alt="Image for Project XXX">
             </a>
             <p>
-                This is a short explenation to this project
-                with some placeholder text so I can see how my
-                Webpage will look like with more entries.
-            </p>
-        </article>
-        <article class="project">
-            <a href="projects/nodejs-dc-bot/">
-                <h3>
-                    Overview
-                </h3>
-                <img src="projects/nodejs-dc-bot/banner.png" alt="Image for Project XXX">
-            </a>
-            <p>
-                This is an overview of the Website,
-                what you can expect from it,
-                what you'll learn from it.
-                And every other stuff,
-                you can learn about me on this webpage.
+                This is a short explenation to this project with some placeholder text so I can see how my Webpage will look like with more entries.
             </p>
         </article>
         <article class="project">
             <a href="projects/python-chess/">
                 <h3>
-                    Python chess project
+                    Python chess
                 </h3>
                 <img src="projects/python-chess/banner.png" alt="Image for Project XXX">
             </a>
             <p>
-                This is a short explenation to this project
-                with some placeholder text so I can see how my
-                Webpage will look like with more entries.
+                This is a short explenation to this project with some placeholder text so I can see how my Webpage will look like with more entries.
             </p>
         </article>
         <article class="project">
             <a href="projects/java-blackjack/">
                 <h3>
-                    Java blackjack project
+                    Java blackjack
                 </h3>
                 <img src="projects/java-blackjack/banner.png" alt="Image for Project XXX">
             </a>
             <p>
-                This is a short explenation to this project
-                with some placeholder text so I can see how my
-                Webpage will look like with more entries.
+                This is a short explenation to this project with some placeholder text so I can see how my Webpage will look like with more entries.
+            </p>
+        </article>
+        <article class="project">
+            <a href="projects/rfid-badge-system/">
+                <h3>
+                    RFID Badge System
+                </h3>
+                <img src="projects/rfid-badge-system/banner.png" alt="Image for Project XXX">
+            </a>
+            <p>
+                This is a short explenation to this project with some placeholder text so I can see how my Webpage will look like with more entries.
+            </p>
+        </article>
+        <article class="project">
+            <a href="projects/java-api/">
+                <h3>
+                    Java API
+                </h3>
+                <img src="projects/java-api/banner.png" alt="Image for Project XXX">
+            </a>
+            <p>
+                This is a short explenation to this project with some placeholder text so I can see how my Webpage will look like with more entries.
+            </p>
+        </article>
+        <article class="project">
+            <a href="projects/robot-cube/">
+                <h3>
+                    Robot solves Cube
+                </h3>
+                <img src="projects/robot-cube/banner.png" alt="Image for Project XXX">
+            </a>
+            <p>
+                This is a short explenation to this project with some placeholder text so I can see how my Webpage will look like with more entries.
             </p>
         </article>
     </section>
 
-    <br>
-    <br>
+    <div class="content-wrap"></div>
 
     <footer>
-        <div class="social">
-            <a href="https://github.com/MrSpoony/"><i></i></a>
-            <a href="https://instagram.com/MrSpoony100"><i></i></a>
-            <a href="https://reddit.com/u/MrSpoony100"><i></i></a>
-            <a href="mailto:kimi.loefffel@gmail.com"><i></i></a>
-        </div>
+        <menu class="social">
+            <a href="https://github.com/MrSpoony/" target="_blank"><i></i></a>
+            <a href="https://instagram.com/MrSpoony100" target="_blank"><i></i></a>
+            <a href="https://reddit.com/u/MrSpoony100" target="_blank"><i></i></a>
+            <a href="mailto:kimi.loefffel@gmail.com" target="_blank"><i></i></a>
+        </menu>
         <ul>
-            <li><a href="index.html">Home</a></li> | 
-            <li><a href="contact.html">Contact</a></li> | 
+            <li><a href="index.html">Home</a></li> |
+            <li><a href="about-me.html">About me</a></li> |
             <li><a href="impressum.html">Impressum</a></li>
         </ul>
         <p class="copyright">
@@ -144,5 +160,7 @@
     <script src="assets/scripts/nav.js"></script>
     <script src="assets/scripts/mode.js"></script>
     <script src="assets/scripts/smooth-change.js"></script>
+    <script src="assets/scripts/tmp-repeat.js"></script>
 </body>
+
 </html>
