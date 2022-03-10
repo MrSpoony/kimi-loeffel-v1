@@ -2,11 +2,15 @@
     .sources {
         padding: 0 var(--side-offset);
     }
-
     .source {
+        display: flex;
+        flex-flow: column;
         margin-top: 4em;
         display: flex;
         height: 100%;
+    }
+    .source h3 {
+        margin-bottom: 0.5em;
     }
 }
 
@@ -80,4 +84,8 @@
 
 .source a {
     text-decoration: none;
+}
+
+.source ul li a {
+    display: inline;
 }

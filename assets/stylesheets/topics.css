@@ -2,11 +2,14 @@
     .topics {
         padding: 0 var(--side-offset);
     }
-
     .topic {
         margin-top: 4em;
         display: flex;
+        flex-flow: column;
         height: 100%;
+    }
+    .topic h3 {
+        margin-bottom: 1em;
     }
 }
 

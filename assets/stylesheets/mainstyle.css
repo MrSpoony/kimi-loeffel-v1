@@ -1,4 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@100&display=swap');
+@font-face {
+    font-family: "Hack Nerd Font Mono";
+    src: url("../fonts/Hack-Italic-Nerd-Font-Complete-Mono.woff");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.woff");
+}
+
+@font-face {
+    font-family: "Poppins Light";
+    src: url("../fonts/Poppins-Light.woff");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("../fonts/Roboto-Thin.woff");
+}
+
+
 @media screen and (max-width: 900px) {
      :root {
         --side-offset: 2.5rem;
@@ -62,7 +82,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    transition: all 0.8s linear;
+    transition: all 0.5s linear;
 }
 
 * {
@@ -115,4 +135,8 @@ h3 {
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 1.75em;
+}
+
+span a {
+    white-space: nowrap;
 }
