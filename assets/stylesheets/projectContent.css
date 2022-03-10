@@ -47,3 +47,7 @@
 .bullet-point .joke {
     font-family: 'Hack Nerd Font Mono';
 }
+
+.bullet-point i {
+    font-style: normal;
+}
