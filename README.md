@@ -6,6 +6,7 @@ Betreuer: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ivan Cammarota
 
 Datum: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04.03.2022
 
+
 # 1Abstract (Kurzbeschreibung)
 
 Auf dieser Website stelle ich mich selbst vor.

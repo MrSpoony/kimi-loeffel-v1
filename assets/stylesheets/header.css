@@ -1,3 +1,9 @@
+@media screen and (min-width: 417px) {
+    #hamburger.is-open .line:nth-child(4) {
+        left: var(--burger-offset);
+    }
+}
+
 @media screen and (max-width: 900px) {
     nav li {
         text-align: center;
@@ -154,8 +160,4 @@ nav a {
     top: 0;
     left: calc(-4 * var(--burger-block-width));
     opacity: 0;
-}
-
-#hamburger.is-open .line:nth-child(4) {
-    left: var(--burger-offset);
 }

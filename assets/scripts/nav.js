@@ -54,14 +54,14 @@ function setBarYToLinkOfCurrentSite() {
 }
 
 function toggleNav() {
-    hamburger.classList.toggle('is-open');
-    navBG.classList.toggle('overlay');
     if (navToggle) resetBar();
     else {
         setBarYToLinkOfCurrentSite();
-        movingBar.style.opacity = 100;
+        movingBar.style.opacity = 1;
     }
     navToggle = !navToggle;
+    hamburger.classList.toggle('is-open');
+    navBG.classList.toggle('overlay');
 }
 
 function moveBar(e) {
